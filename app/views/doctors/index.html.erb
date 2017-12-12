@@ -1,5 +1,7 @@
 
+<ul>
 <% @doctors.each do |doctor| %>
-  <p>Name: <%= link_to doctor.name, doctor_path(doctor)%></p>
-  <p>Number of patients: <%= doctor.num_of_appts %></p>
+  <li>Name: <%= link_to doctor.name, doctor_path(doctor)%>
+    Number of patients: <%= doctor.num_of_appts %></li>
 <% end %>
+</ul>
