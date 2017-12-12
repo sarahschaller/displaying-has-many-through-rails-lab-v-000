@@ -1,6 +1,3 @@
-doctors name
-link to show page
-count of their patients
 
 <% @doctors.each do |doctor| %>
   <p>Name: <%= link_to doctor.name, doctor_path(doctor)%></p>
